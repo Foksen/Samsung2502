@@ -1,6 +1,8 @@
 package com.example.fragments2502;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.os.Bundle;
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.)
+                .findFragmentById(R.id.nav_graph);
+        NavController navController = navHostFragment.getNavController();
     }
 }
