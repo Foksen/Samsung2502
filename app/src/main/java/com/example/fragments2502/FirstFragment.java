@@ -18,6 +18,8 @@ public class FirstFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        binding = FragmentFirstBinding.inflate(inflater, container, false);
+
         binding.buttonRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -27,7 +27,7 @@ public class SecondFragment extends Fragment {
 
         String colorCode = null;
 
-        FragmentColors color = (FragmentColors)getArguments().get("color");
+        FragmentColors color = (FragmentColors)getArguments().getSerializable("color");
         switch (color) {
             case RED:
                 colorCode = "#FF0000";
